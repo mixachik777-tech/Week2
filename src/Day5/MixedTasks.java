@@ -96,12 +96,8 @@ class Task {
     public void caseFreeComparison(String firstWord, String secondWord) {
         if (firstWord.equalsIgnoreCase(secondWord)) {
             System.out.println("Слова равны без учёта регистра");
-        } else if (firstWord.length() > secondWord.length()) {
-            System.out.println("Слова разные. Первое слово длиннее второго");
-        } else if (firstWord.length() < secondWord.length()) {
-            System.out.println("Слова разные. Второе слово длиннее первого");
         } else {
-            System.out.println("Слова разные, но одинаковой длины");
+            System.out.println("Слова разные");
         }
     }
 }

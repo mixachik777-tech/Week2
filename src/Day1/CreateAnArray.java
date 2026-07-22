@@ -14,12 +14,12 @@ public class CreateAnArray {
         for (int x:numbers) {
             sum = sum + x;
         }
-        System.out.println("Сумма объектов массива равна: " + sum);
+        System.out.println("Сумма оббьектов массива ровна: " + sum);
 
-        double average = (double) sum / numbers.length;
+        double medium = (double) sum / numbers.length;;
 
         System.out.println();
 
-        System.out.println("Среднее арифметическое: " + average);
+        System.out.println("Среднее арифметическое: " + medium);
     }
 }

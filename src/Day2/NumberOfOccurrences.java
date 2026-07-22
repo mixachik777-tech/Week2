@@ -19,6 +19,6 @@ public class NumberOfOccurrences {
                 claimNumber++;
             }
         }
-        System.out.printf("Количество вхождений в массиве равно: %d%n", claimNumber);
+        System.out.printf("Колличество вхождений в массиве ровно: %d", claimNumber);
     }
 }

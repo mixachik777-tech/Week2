@@ -7,7 +7,7 @@ public class PracticeD3 {
         Scanner scanner = new Scanner(System.in);   // ← один Scanner!
         int[] numbers = {6, 2, 1, 7, 12, 5};
 
-        printArray(numbers);
+        printArrey(numbers);
         System.out.println("Сумма всех чисел в массиве: " + sumArray(numbers));
         System.out.println("Максимальное значение в массиве: " + maxArray(numbers));
 
@@ -27,14 +27,10 @@ public class PracticeD3 {
             System.out.println("Ваше слово не палиндром");
         }
 
-        System.out.print("Впишите предложение для подсчёта слов: ");
-        String sentence = scanner.nextLine();
-        System.out.println("Количество слов в предложении: " + countWords(sentence));
-
         scanner.close();   // ← закрываем один раз
     }
 
-    public static void printArray(int[] arr) {
+    public static void printArrey(int[] arr) {
         for (int x : arr) {
             System.out.print(x + " ");   // ← print, не println!
         }
@@ -74,23 +70,5 @@ public class PracticeD3 {
             reversed += word.charAt(i);
         }
         return word.equals(reversed);
-    }
-
-    public static int countWords(String sentence) {
-        String trimmed = sentence.trim();
-        if (trimmed.length() == 0) {
-            return 0;
-        }
-        int words = 0;
-        boolean insideWord = false;
-        for (int i = 0; i < trimmed.length(); i++) {
-            if (trimmed.charAt(i) == ' ') {
-                insideWord = false;
-            } else if (!insideWord) {
-                words++;
-                insideWord = true;
-            }
-        }
-        return words;
     }
 }

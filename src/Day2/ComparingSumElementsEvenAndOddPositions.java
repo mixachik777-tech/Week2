@@ -16,11 +16,11 @@ public class ComparingSumElementsEvenAndOddPositions {
         }
 
         if (sumEvenElements > sumOddElements) {
-            System.out.printf("Сумма элементов на четных позициях: %d, больше суммы на нечетных.", sumEvenElements);
+            System.out.printf("Сумма элементов на четных позициях: %d, больше суммы нечетных.", sumEvenElements);
         } else if (sumEvenElements < sumOddElements) {
-            System.out.printf("Сумма элементов на нечетных позициях: %d, больше суммы на четных.", sumOddElements);
+            System.out.printf("Сумма элементов на нечетных позициях: %d,  больше суммы четных.", sumOddElements);
         } else {
-            System.out.println("Суммы элементов на четных и нечетных позициях равны.");
+            System.out.println("Суммы четных и нечетных значений равны.");
         }
     }
 }

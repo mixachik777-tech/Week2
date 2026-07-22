@@ -1,6 +1,6 @@
 package Day1;
 
-public class MinMaxArray {
+public class MinimalObject {
     public static void main(String[] args) {
 
         int[] numbers = {9,5,2,6,9,7,4,3,6,8,9,6};
